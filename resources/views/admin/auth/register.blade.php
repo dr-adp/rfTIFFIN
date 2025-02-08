@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Star Admin2 </title>
+    <title>Rashmi Foods - TIFFIN</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ asset('admin-assets/vendors/feather/feather.css') }}">
     <link rel="stylesheet" href="{{ asset('admin-assets/vendors/mdi/css/materialdesignicons.min.css') }}">
@@ -37,23 +37,13 @@
                 <form class="pt-3" method="POST" action="{{ route('admin.register') }}">
                   @csrf
                   <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Username">
+                    <input type="text" class="form-control form-control-lg" id="exampleInputUsername1" placeholder="Username" name="name">
                   </div>
                   <div class="form-group">
-                    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email">
+                    <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email" name="email">
                   </div>
                   <div class="form-group">
-                    <select class="form-select form-select-lg" id="exampleFormControlSelect2">
-                      <option>Country</option>
-                      <option>United States of America</option>
-                      <option>United Kingdom</option>
-                      <option>India</option>
-                      <option>Germany</option>
-                      <option>Argentina</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password">
+                    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" name="password">
                   </div>
                   <div class="mb-4">
                     <div class="form-check">
@@ -62,9 +52,9 @@
                     </div>
                   </div>
                   <div class="mt-3 d-grid gap-2">
-                    <a class="btn btn-block btn-primary btn-lg fw-medium auth-form-btn" href="../../index.html">SIGN UP</a>
+                    <input type="submit" class="btn btn-block btn-primary btn-lg fw-medium auth-form-btn" value="SIGN UP" />
                   </div>
-                  <div class="text-center mt-4 fw-light"> Already have an account? <a href="login.html" class="text-primary">Login</a>
+                  <div class="text-center mt-4 fw-light"> Already have an account? <a href="{{route('admin.login')}}" class="text-primary">Login</a>
                   </div>
                 </form>
               </div>
